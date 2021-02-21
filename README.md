@@ -1,5 +1,42 @@
 ### wdw-music-一个基于vue的高仿网易云音乐网站
 
+#### the diy By LC 仅仅为了学习 谢谢大佬
+
+> https://github.com/ahviplc/lc-music
+
+> https://github.com/ahviplc/lc-music.git
+
+diy from:
+> https://github.com/sanbinlbw/wdw-music
+
+> https://hub.fastgit.org/sanbinlbw/wdw-music
+
+> 优化了axios的使用过程 新增了axios拦截器
+
+>  还有新增了 vue.config.js配置文件 改变了项目启动端口为3000 以及解决了本地环境访问接口的跨域问题.
+
+```markdown
+本地启动后 端口为:3000
+http://localhost:3000
+http://localhost:3000/#/musicHome/findMusic/personRecom
+即可访问
+-------------------------------------------------------------
+网易云音乐接口项目 地址
+https://github.com/Binaryify/NeteaseCloudMusicApi
+
+访问接口 如下
+http://localhost:3000/api/search/hot/detail
+其实就是访问
+https://autumnfish.cn/search/hot/detail
+大佬在自己服务器上也部署了
+http://8.129.133.120:3000/search/hot/detail
+
+所以跨域时
+也可以替换成大佬自己服务器 根据上面 网易云音乐接口项目 部署 
+提供的网易云音乐接口【http://8.129.133.120:3000/】
+-------------------------------------------------------------
+```
+
 #### (http://8.129.133.120/)
 (线上演示地址，由于太菜了跨域什么的没有做好，线上地址可能会有一些数据请求不到，后面我会完善的！！)
 
@@ -8,6 +45,7 @@
 本人大三前端菜鸡一只，想自己做一个拿得出手的项目，网上看来看去不是管理系统就是什么商城之类的，没有多大兴趣，偶然间看到github有提供网易云音乐接口，然后看了看别人的作品不禁投出羡慕，想着要是自己能做一个这个该多有成就感，想着想着就开始肝代码了hh。
 肝代码不易，跪求各位大佬去github上给个star。在网上转载或调用请标明出处，该项目仅供学习！！！！！！！
 
+#### lc diy from 下面的网址 仅供自己学习使用 谢谢大佬
 [Github仓库](https://github.com/sanbinlbw/wdw-music)
 
 
@@ -29,7 +67,11 @@ npm install     # 安装项目所需的依赖(如果速度过慢, 可以尝试cn
 npm run serve   #启动项目服务
 ```
 
-浏览器打开输入http://localhost:8080网站就能打开哟(注意查看main.js的路径查看接口地址，localhost:3000是后端下载到本地开启，使用云端的api的话需要去配置哦，配置目录node_modules>@vue>cli-service>lib>option.js,找到devServer,修改为
+浏览器打开输入http://localhost:8080网站就能打开哟
+(注意查看main.js的路径查看接口地址，localhost:3000是后端下载到本地开启，
+使用云端的api的话需要去配置哦，
+配置目录node_modules>@vue>cli-service>lib>option.js,
+找到devServer,修改为
       devServer: {
         disableHostCheck: true,
         proxy: { //解决跨域问题
