@@ -6,6 +6,18 @@
 
 > https://github.com/ahviplc/lc-music.git
 
+```markdown
+cd lc-music
+npm i
+npm run serve
+访问
+http://localhost:3000
+即可使用
+也可
+npm run build
+进行打包部署
+```
+
 diy from:
 > https://github.com/sanbinlbw/wdw-music
 
@@ -101,10 +113,6 @@ npm run serve   #启动项目服务
 3.cd api文件夹
 
 4.node app.js
-
-
-
-
 
 #### 关于本项目
 
